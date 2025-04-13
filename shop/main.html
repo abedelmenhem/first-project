@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LighterWorld - Premium Lighters</title>
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+        <header>
+            <h3 style-color="blue">Lighter World</h3>
+            <div class="header-links"> 
+                <h5>              
+                    <a href="#contact">Contact</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="registing_client.html">Register</a>   
+                    <a href="basket.html"><img src="https://as2.ftcdn.net/v2/jpg/01/63/42/79/1000_F_163427943_W56xtj7YydS4YujdUqQot94IINtt91FV.jpg" width="30" height="30" alt="Home Icon" /></a>
+                </h5>
+            </div>
+        </header>
+
+        <main id="home">          
+            <section id="products">
+                <h2>Our Products</h2>
+                <ul>
+                    <li>Lighter Model 1</li>
+                    <li>Lighter Model 2</li>
+                    <li>Lighter Model 3</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <div id="result"></div>
+            </section>
+        </main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At LighterWorld, we offer a wide range of premium lighters for all your needs.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 LighterWorld. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            // JavaScript code to handle form submission and other interactions
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                alert(`Thank you, ${name}! We will contact you at ${email}.`);
+            });
+        </script>
+    </body>
+</html>
